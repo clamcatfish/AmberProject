@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -14,11 +15,11 @@ const page = () => {
             <div className="flex flex-row">
                 <div className="flex flex-col items-center p-4">
                     <h1 className="font-roboto text-2xl">The Notebook</h1>
-                    <img src="firstpage.jpeg" width={500} height="auto"/>
+                    <Image src="firstpage.jpeg" width={500} height="auto" alt="first page within the notebook"/>
                     <h1 className="font-roboto text-2xl">Pages Inside</h1>
-                    <img src="writinginside.jpeg" width={500} height="auto"/>
+                    <Image src="writinginside.jpeg" width={500} height="auto" alt="example documentation"/>
                     <h1 className="font-roboto text-2xl mt-3">Spreadsheet</h1>
-                    <img src="spreadsheet.png" width={600} height="auto"/>
+                    <Image src="spreadsheet.png" width={600} height="auto" alt="screenshot of the Focus spreadsheet on Google Sheets"/>
                 </div>
                 <div className="flex flex-col items-center p-4 w-1/2">
                     <div className="py-7">
@@ -46,7 +47,7 @@ const page = () => {
                         <p className=" font-noto_serif text-center text-lg">I wanted to improve the recollection of all of the entries I have make over the years, which inspired me to turn The Amber Project
                 into a web application.</p>
                     </div>
-                    <img src="amberbooks.jpeg" width={500} height="auto"/>
+                    <Image src="amberbooks.jpeg" width={500} height="auto" alt="Amber holding books"/>
                 </div>
                 
             </div>
