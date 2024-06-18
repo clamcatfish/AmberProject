@@ -20,7 +20,7 @@ const BoardTagList = ({ tags, onData }) => {
       }
       // console.log(names)
       onData(obj)
-    }, [clickedIndices, tags, onData, theme])
+    }, [clickedIndices])
     
     const themes = {
       // Personal Development
