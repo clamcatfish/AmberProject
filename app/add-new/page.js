@@ -7,7 +7,7 @@ import SideBar from "../components/SideBar";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 
-const index = () => {
+const Index = () => {
   const Router = useRouter();
   const [input, setInput] = useState({});
 
@@ -135,4 +135,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
