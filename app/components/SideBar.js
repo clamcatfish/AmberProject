@@ -1,4 +1,5 @@
 'use client'
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -18,7 +19,7 @@ const SideBar = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:3000/api/entries/books', {cache: 'no-store'})
+      const response = await fetch(`${apiUrl}/api/entries/books`, {cache: 'no-store'})
       if (!response.ok) {
         throw new Error('Failed to fetch books')
       }
