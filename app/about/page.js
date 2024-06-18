@@ -20,23 +20,23 @@ const page = () => {
           <div className="flex flex-col items-center p-4">
             <h1 className="font-roboto text-2xl">The Notebook</h1>
             <Image
-              src="firstpage.jpeg"
+              src="/firstpage.jpeg"
               width={500}
-              height="auto"
+              height={338}
               alt="first page within the notebook"
             />
             <h1 className="font-roboto text-2xl">Pages Inside</h1>
             <Image
-              src="writinginside.jpeg"
+              src="/writinginside.jpeg"
               width={500}
-              height="auto"
+              height={375}
               alt="example documentation"
             />
             <h1 className="font-roboto text-2xl mt-3">Spreadsheet</h1>
             <Image
-              src="spreadsheet.png"
+              src="/spreadsheet.png"
               width={600}
-              height="auto"
+              height={430}
               alt="screenshot of the Focus spreadsheet on Google Sheets"
             />
           </div>
@@ -96,9 +96,9 @@ const page = () => {
               </p>
             </div>
             <Image
-              src="amberbooks.jpeg"
+              src="/amberbooks.jpeg"
               width={500}
-              height="auto"
+              height={400}
               alt="Amber holding books"
             />
           </div>
