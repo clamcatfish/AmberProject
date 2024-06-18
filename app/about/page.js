@@ -51,7 +51,7 @@ const page = () => {
             <div className="py-7">
               <p className=" font-noto_serif text-center text-lg">
                 Amber is the name I gave to a notebook. I use Amber to jot down
-                page numbers I find interesting while I'm reading books with
+                page numbers I find interesting while I`&apos;`m reading books with
                 intent to learn.
               </p>
             </div>
@@ -77,13 +77,13 @@ const page = () => {
             <div className="py-7">
               <p className=" font-noto_serif text-center text-lg">
                 Since I quit playing video games in late 2023, the amount of
-                books I've read and documented in Amber has doubled.
+                books I`&apos;`ve read and documented in Amber has doubled.
               </p>
             </div>
             <div className="py-7">
               <p className=" font-noto_serif text-center text-lg">
                 There are 13 books in the database on MongoDB. There are 2 more
-                books I have completed, but haven't entered them into the
+                books I have completed, but haven`&apos;`t entered them into the
                 database yet. Putting new entries in involves touch typing words
                 from the book into the database by hand.
               </p>
