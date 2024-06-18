@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="bg-white h-auto">
       <div className="mt-8 flex flex-col justify-center items-center">
-        <Image width={210} height="auto" src="Amber.jpeg" alt="Amber"/>
+        <Image width={210} height={149} src="/Amber.jpeg" alt="Amber"/>
       </div>
       <div className="flex flex-row justify-center">
         <h1 className="m-3 font-display text-amber-brown font-medium text-9xl">
