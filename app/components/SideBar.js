@@ -19,7 +19,7 @@ const SideBar = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`${apiUrl}/api/entries/books`, {cache: 'no-store'})
+      const response = await fetch(`${apiUrl}api/entries/books`, {cache: 'no-store'})
       if (!response.ok) {
         throw new Error('Failed to fetch books')
       }

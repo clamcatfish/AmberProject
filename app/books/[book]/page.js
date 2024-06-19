@@ -5,7 +5,7 @@ import Nav from "@/app/components/Nav";
 import SideBar from "@/app/components/SideBar";
 
 const getData = async (book) => {
-    const response = await fetch(`${apiUrl}/api/entries/books/${book}`, { cache: "no-store" })
+    const response = await fetch(`${apiUrl}api/entries/books/${book}`, { cache: "no-store" })
 
     return response.json();
 }

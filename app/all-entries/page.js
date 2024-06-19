@@ -5,7 +5,7 @@ import SideBar from "../components/SideBar"
 import EntryList from '../components/EntryList'
 
 const getData = async () => {
-  const response = await fetch(`${apiUrl}/api/entries`, { cache: "no-store" })
+  const response = await fetch(`${apiUrl}api/entries`, { cache: "no-store" })
   if (!response.ok) {
     throw new Error('Failed to fetch data');
   }
