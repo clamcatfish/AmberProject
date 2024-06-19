@@ -1,0 +1,13 @@
+[build]
+    command = "npm run build
+    publish = ".next"
+
+[build.environment]
+    NEXT_PUBLIC_API_URL = "https://main--clamcatfish-amber-project.netlify.app"
+    DATABASE_URL = "mongodb+srv://calumaaldridge:fwwxgtvEmz0twHhA@cluster0.iflxc3x.mongodb.net/entries"
+
+[[plugins]]
+package = 'netlify-plugin-prisma-provider'
+    [plugins.inputs]
+    path = 'prisma/schema.prisma'
+    varName = 'mongodb'
