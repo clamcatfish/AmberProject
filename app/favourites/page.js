@@ -1,9 +1,11 @@
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
+
 import Nav from "../components/Nav"
 import SideBar from "../components/SideBar"
 import EntryList from '../components/EntryList'
 
 const getData = async () => {
-  const response = await fetch('http://localhost:3000/api/entries/favourites', { cache: "no-store" })
+  const response = await fetch(`${apiUrl}/api/entries/favourites`, { cache: "no-store" })
   if (!response.ok) {
     throw new Error('Failed to fetch data');
   }
