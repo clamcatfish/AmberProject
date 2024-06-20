@@ -27,7 +27,7 @@ export const POST = async (req) => {
 
 export const GET = async (req) => {
     try {
-      const entries = await client.entry.findMany();
+      const entries = await client.entry.findMany({});
       return NextResponse.json(entries)
     } catch (error) {
       return NextResponse.json(
