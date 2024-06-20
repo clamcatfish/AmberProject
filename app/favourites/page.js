@@ -6,9 +6,9 @@ import EntryList from '../components/EntryList'
 
 const getData = async () => {
   const response = await fetch(`${apiUrl}/api/entries/favourites`, { cache: "no-store" })
-  if (!response.ok) {
-    throw new Error('Failed to fetch data');
-  }
+  // if (!response.ok) {
+  //   throw new Error('Failed to fetch data');
+  // }
   return response.json();
 }
 
