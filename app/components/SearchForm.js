@@ -2,6 +2,7 @@
 
 import EntryList from "./EntryList";
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
 const { useState, useEffect } = require("react");
 
 const SearchForm = ({ names }) => {
@@ -23,7 +24,7 @@ const SearchForm = ({ names }) => {
         const query = names
             .map((genre) => `tags=${encodeURIComponent(genre.trim())}`)
             .join("&");
-        const response = await fetch(`http://localhost:3000/api/entries/tags?${query}`, {
+        const response = await fetch(`${apiUrl}/api/entries/tags?${query}`, {
             cache: "no-store",
         });
         // if (!response.ok) {
